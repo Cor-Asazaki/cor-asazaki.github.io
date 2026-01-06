@@ -90,15 +90,18 @@ ul {
 	margin: 0 0 0 3em;
 	padding: 0;
 }
-li {
+ul li {
 	list-style: disc;
+}
+ul li ul li{
+	list-style: circle;
 }
 .li-descript{
 	display: block;
 	padding: 0 0 0 4em;
 }
 p {
-	margin: 0 0 0 1em;
+	margin: 0.25em 0 0.25em 1em;
 }
 img {
 	max-width: 100%;
@@ -160,6 +163,10 @@ main {
 	display: block;
 }
 .stage-fig figcaption {
+	text-align: center;
+	font-size: 0.9em;
+}
+.figcaption {
 	text-align: center;
 	font-size: 0.9em;
 }
