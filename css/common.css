@@ -86,6 +86,23 @@ header {
 #text {
 	padding: 0 20px 0 0;
 }
+ol{
+	margin: 0 0 0 3em;
+	padding: 0;
+}
+ol.balph li{
+	position: relative;
+	list-style-type: none;
+}
+ol.balph li:before{
+	position: absolute;
+	right: calc(100% + 0.5rem);
+	content: "(" counter(list-item) ")";
+}
+ol.footnote li{
+	list-style: none;
+	font-size: 0.9em;
+}
 ul {
 	margin: 0 0 0 3em;
 	padding: 0;
