@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>凡例-ソウルハウンドIII-麻崎系</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S1J2KL6D2F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-S1J2KL6D2F');
+    </script>
+</head>
+
+<body>
+<div id="outer">
+<header>
+    <div id="header-inner"><h1><a href="../index.html">ソウルハウンドIII 安全潜行マニュアル</a></h1></div>
+</header>
+
+<div id="container">
+
+<main>
+    <h2>基礎知識</h2>
+    <h3>凡例</h3>
+    <h4>マニュアルの構成</h4>
+    <p>
+        本マニュアルの構成は次のとおりです: 
+    </p>
+    <ul>
+        <li>
+            基礎知識: 本マニュアルにおいて前提となる情報や知識を述べる．
+        </li>
+        <li>
+            階層別指針: 各階層ごとの前期指針と後期指針，およびそれらの解説を述べる．
+        </li>
+        <li>
+            一般指針: 各テーマ・項目ごとに，指針とその解説を述べる．
+        </li>
+        <li>
+            TIPS: その他のことについて解説する．
+        </li>
+    </ul>
+    <p>
+        ここに，ステージのうち，深度 1300 m以前にあたる部分を<b>前期</b>，深度 1300 m以降にあたる部分を<b>後期</b>とよびます．各指針は，同じ型の階層やパターンに対しても，前期と後期とで異なることがあります．
+    </p>
+    <p>
+        本マニュアルを通して，新出用語は<b>太字</b>，短い強調は<span style="text-decoration: underline">下線</span>で表記されます．解説において，一部の注釈は次の形式で強調されています: 
+    </p>
+    <ul>
+        <li><b style="color: red">注意:</b> 取るべき行動が存在する，気を付けるべきこと．</li>
+        <li><b style="color: blue">注記:</b> その他の気を付けるべきこと．</li>
+        <li><b style="color: green">代替:</b> 無条件で指針以外に取ることのできる有効な行動．条件付きで取れる行動は「代替」としては指摘しない．</li>
+    </ul>
+    <p>
+        各階層は，針やレーザーの出現に応じて次の 4 種類に分類されます: 
+    </p>
+    <ul>
+        <li><b>通常ステージ</b>: 確実には針が出現せず，レーザーも出現しない．</li>
+        <li><b>針ステージ</b>: 確実に針が出現する．</li>
+        <li><b>縦ステージ</b>: 縦レーザーが出現する．</li>
+        <li><b>横ステージ</b>: 横レーザーが出現する．</li>
+    </ul>
+
+    <h4>図の約束</h4>
+    <p>
+        ステージの図には，以下の表の記号を用います: 
+    </p>
+
+    <div style="display: flex; gap: 1em; align-items: flex-start">
+        <table style="width: 40%" border="1">
+            <tr>
+                <th style="width: 50%">記号</th>
+                <th>意味</th>
+            </tr>
+            <tr>
+                <td><img src="../png/legend-stones.png" style="width: 50%; display: block; margin: auto;"></td>
+                <td>石（赤・白・青・紫）</td>
+            </tr>
+            <tr>
+                <td><img src="../png/legend-clay.png" style="width: 25%; display: block; margin: auto;"></td>
+                <td>塊</td>
+            </tr>
+            <tr>
+                <td><img src="../png/legend-wall.png" style="width: 25%; display: block; margin: auto;"></td>
+                <td>壁</td>
+            </tr>
+            <tr>
+                <td><img src="../png/legend-white.png" style="width: 25%; display: block; margin: auto;"></td>
+                <td>スペース</td>
+            </tr>
+            <tr>
+                <td><img src="../png/legend-spears.png" style="width: 75%; display: block; margin: auto;"></td>
+                <td>針（上針・下針・左針・右針・四針）</td>
+            </tr>
+            <tr>
+                <td><img src="../png/legend-any.png" style="width: 25%; display: block; margin: auto;"></td>
+                <td>任意のブロック</td>
+            </tr>
+            <tr>
+                <td><img src="../png/legend-yellow.png" style="width: 25%; display: block; margin: auto;"></td>
+                <td>変数マス</td>
+            </tr>
+        </table>
+        <table style="width: 40%" border="1">
+            <tr>
+                <th style="width: 50%">記号</th>
+                <th>意味</th>
+            </tr>
+            <tr>
+                <td><img src="../png/legend-dog.png" style="width: 25%; display: block; margin: auto;"></td>
+                <td>犬</td>
+            </tr>
+            <tr>
+                <td><img src="../png/legend-pome.png" style="width: 25%; display: block; margin: auto;"></td>
+                <td>ザクロ</td>
+            </tr>
+            <tr>
+                <td><img src="../png/legend-silver.png" style="width: 25%; display: block; margin: auto;"></td>
+                <td>銀貨</td>
+            </tr>
+            <tr>
+                <td><img src="../png/legend-gold.png" style="width: 25%; display: block; margin: auto;"></td>
+                <td>金貨</td>
+            </tr>
+            <tr>
+                <td><img src="../png/legend-lazers.png" style="width: 75%; display: block; margin: auto;"></td>
+                <td>レーザーの予告線（縦・横）</td>
+            </tr>
+            <tr>
+                <td><img src="../png/legend-arrow.png" style="width: 75%; display: block; margin: auto;"></td>
+                <td>移動経路</td>
+            </tr>
+        </table>
+    </div>
+    <table style="width: 80%" border="1">
+        <tr>
+            <th style="width: 75%">記号</th>
+            <th>意味</th>
+        </tr>
+        <tr>
+            <td><img src="../png/legend-index.png" style="display: block; margin: auto;"></td>
+            <td>階層とその深度（図は 500 m型の 6 行目を指す）</td>
+        </tr>
+        <tr>
+            <td><img src="../png/legend-p-index.png" style="display: block; margin: auto;"></td>
+            <td>パターン内の深度（図はパターンの 2 行目を指す）</td>
+        </tr>
+    </table>
+
+    <figure class="stage-fig">
+        <img src="../png/legend-coordinates.png" alt="P-(1, -2)が赤石，P-(3, +1)が金貨">
+        <figcaption>図 1.1.1. 座標の読み方</figcaption>
+    </figure>
+
+    <p>
+        ステージの端を表す記号は用意していません． &pm;4 列にあたる部分はすべて壁が配置されているものと見なします．
+    </p>
+    <p>
+        ステージの座標は， 2 つの（有効な）実数の組で表します．第 1 成分が行（垂直方向の座標），第 2 成分が列（水平方向の座標）を表します．列の座標は，ステージ中央の列のマスの中心を 0 とし， &minus;3 から &plus;3 の値を取ります．列の座標の符号は 0 のときを除いて省略しません．オブジェクトおよび犬の座標は，その描画の中心点のものを採ります．座標の表記は，状況に応じて次の 3 つを使い分けます: 
+    </p>
+    <ul>
+        <li>\((x, y)\): 深度 \(x\) mの \(y\) 列目．</li>
+        <li>\(k\)-\((x, y)\): \((k \times 100)\) m型における，深度 \(x\) mの \(y\) 列目．</li>
+        <li>P-\((x, y)\): そのパターン等における，深度 \(x\) mの \(y\) 列目．</li>
+    </ul>
+    <p>
+        例えば，図 1.1.1 において，赤石の座標は P-(1, &minus;2) ，金貨の座標は P-(3, &plus;1) と書かれます．また，パターン内での行数は &quot;P-&quot; を用いて表します．例えば，再び図 1.1.1 において，赤石が位置する行は P-1 行目，金貨が位置する行は P-3 行目です．
+    </p>
+    <p>
+        エリアやパターンの<b>出現深度</b>は，図で P-(1, \(y\)) にあたる行が現れる深度のことを指します．ただし，エリアやパターン全体を表す図は， P-0 行目を含めて描かれます．
+    </p>
+
+    <h4>基礎用語（五十音順）</h4>
+    <p>
+        以下の表は，本マニュアルにおける基礎的な用語を五十音順で挙げたものです（すべての用語を網羅したものではありません）．用語は必ずしも公式のものとは一致しません．用語の検索にはブラウザの機能 (Ctrl&plus;F) も利用してください．
+    </p>
+
+    <table style="width: 80%" border="1">
+        <tr>
+            <th style="width: 15%">用語</th>
+            <th>意味</th>
+        </tr>
+        <!-- あ行 -->
+        <tr>
+            <td>安定</td>
+            <td>範囲内のすべてのオブジェクトが，落下しておらず，かつ自然には消滅しないこと．</td>
+        </tr>
+        <tr>
+            <td>石</td>
+            <td>1 回の吸引で破壊できるブロック．赤・白・青・紫の 4 色．公称は「ソウルブロック」．</td>
+        </tr>
+        <tr>
+            <td>犬</td>
+            <td>プレイヤーのワンちゃん．</td>
+        </tr>
+        <tr>
+            <td>色</td>
+            <td>石および塊の分類．赤・白・青・紫・透明・塊の 6 種類．</td>
+        </tr>
+        <tr>
+            <td>迂遠</td>
+            <td>時間のかかる行動．一般的には有効でも，その状況ではかえって時間がかかる場合も含む．</td>
+        </tr>
+        <tr>
+            <td>右方</td>
+            <td>対象マスより右の列かつ等しい行のマス全体，および対象マス自身．</td>
+        </tr>
+        <!-- か行 -->
+        <tr>
+            <td>階層</td>
+            <td>100 mごとに設定された各ステージ．</td>
+        </tr>
+        <tr>
+            <td>壁</td>
+            <td>死亡判定のない破壊できないブロック．</td>
+        </tr>
+        <tr>
+            <td>下方</td>
+            <td>対象マスより下の行かつ等しい列のマス全体，および対象マス自身．</td>
+        </tr>
+        <tr>
+            <td>吸引</td>
+            <td>犬が掃除機を使うこと．石や塊を破壊できる．</td>
+        </tr>
+        <tr>
+            <td>急降下</td>
+            <td>犬が自由落下より速く降りること．降下中の下吸引で実行する．</td>
+        </tr>
+        <tr>
+            <td>行</td>
+            <td>ステージの垂直方向の座標．深さ．</sup></td>
+        </tr>
+        <tr>
+            <td>狭窄</td>
+            <td>範囲内で，通過可能なマスが 1 マスだけの行，またはそのマス．</td>
+        </tr>
+        <tr>
+            <td>金貨</td>
+            <td>金色のアイテム．犬に無敵状態またはバリアを付与する．</td>
+        </tr>
+        <tr>
+            <td>銀貨</td>
+            <td>銀色のアイテム．画面上の石の色を変える．</td>
+        </tr>
+        <tr>
+            <td>塊（クレイ）</td>
+            <td>5 回の吸引で破壊できるブロック．（これも公称は「ソウルブロック」？）</td>
+        </tr>
+        <tr>
+            <td>経路</td>
+            <td>犬の通り道．</td>
+        </tr>
+        <tr>
+            <td>降下</td>
+            <td>犬が自由落下すること．</td>
+        </tr>
+        <tr>
+            <td>後期</td>
+            <td>ステージのうち，深度 1300 m以降の部分．</td>
+        </tr>
+        <tr>
+            <td>硬直</td>
+            <td>犬が操作を受け付けないこと．</td>
+        </tr>
+        <!-- さ行 -->
+        <tr>
+            <td>ザクロ</td>
+            <td>赤色のアイテム．犬の寿命を 23 カウント回復する．公称は「あざやかザクロ」．</td>
+        </tr>
+        <tr>
+            <td>左方</td>
+            <td>対象マスより左の列かつ等しい行のマス全体，および対象マス自身．</td>
+        </tr>
+        <tr>
+            <td>残機</td>
+            <td>犬の残機．最大 10 個所持できる．公称は「セカンドチャンス」．</td>
+        </tr>
+        <tr>
+            <td>寿命</td>
+            <td>犬が生存できる時間．ザクロで回復できる．最大 100 カウント．</td>
+        </tr>
+        <tr>
+            <td>上方</td>
+            <td>対象マスより上の行かつ等しい列のマス全体，および対象マス自身．</td>
+        </tr>
+        <tr>
+            <td>深度</td>
+            <td>ステージにおける，絶対的または相対的な深さ．</td>
+        </tr>
+        <tr>
+            <td>進入</td>
+            <td>エリアやパターンなどに入ること．</td>
+        </tr>
+        <tr>
+            <td>スコア</td>
+            <td>犬の（最大）到達深度．</td>
+        </tr>
+        <tr>
+            <td>スペース</td>
+            <td>空白．ブロック（またはオブジェクト）のない領域．</td>
+        </tr>
+        <tr>
+            <td>前期</td>
+            <td>ステージのうち，深度 1300 m以前の部分．</td>
+        </tr>
+        <tr>
+            <td>潜行</td>
+            <td>犬がより深い地点へ降りること．途中で上昇を伴ってもよい．</td>
+        </tr>
+        <tr>
+            <td>側面</td>
+            <td>直左または直右．</td>
+        </tr>
+        <!-- た行 -->
+        <tr>
+            <td>代替的</td>
+            <td>指針以外に有効だと思われる行動で，無条件に実行してよいもの．</td>
+        </tr>
+        <tr>
+            <td>直右</td>
+            <td>すぐ右のマス．</td>
+        </tr>
+        <tr>
+            <td>直左</td>
+            <td>すぐ左のマス．</td>
+        </tr>
+        <tr>
+            <td>直上</td>
+            <td>すぐ上のマス．</td>
+        </tr>
+        <tr>
+            <td>直下</td>
+            <td>すぐ下のマス．</td>
+        </tr>
+        <tr>
+            <td>定型</td>
+            <td>標準的な経路や立ち回り．</td>
+        </tr>
+        <tr>
+            <td>同定</td>
+            <td>パターンなどが，最も細かい分類のどれに属するかを特定すること．</td>
+        </tr>
+        <!-- な行 -->
+        <!-- は行 -->
+        <tr>
+            <td>針</td>
+            <td>特定の方向から近づくと針を出すブロック．公称は「スパルタンソウルブロック」．</td>
+        </tr>
+        <tr>
+            <td>ポイント</td>
+            <td>獲得点数．公称は「スコア」．</td>
+        </tr>
+        <!-- ま行 -->
+        <!-- や行 -->
+        <!-- ら行 -->
+        <tr>
+            <td>落下</td>
+            <td>オブジェクトが自由落下すること．</td>
+        </tr>
+        <tr>
+            <td>落下停止</td>
+            <td>オブジェクトが落下をやめること．</td>
+        </tr>
+        <tr>
+            <td>離脱</td>
+            <td>エリアやパターンなどから出ること．</td>
+        </tr>
+        <tr>
+            <td>レーザー</td>
+            <td>死亡判定をもつ青白い光線．縦と横の 2 種類．照射の直前に赤い線と音で予告される．</td>
+        </tr>
+        <tr>
+            <td>列</td>
+            <td>ステージの水平方向の座標<sup><a href="#footcite01" id="footref01">&#42;1</a></sup>．</td>
+        </tr>
+        <tr>
+            <td>連結</td>
+            <td>1. 2 つの同色のブロックが隣接によって繋がり，離れなくなること．<br>2. 同色のブロックの集合であって，どの 2 つのブロックも隣接されたブロックだけを伝って繋がっていること．</td>
+        </tr>
+        <tr>
+            <td>連結成分</td>
+            <td>同色ブロックの連結な集合であって，（包含関係について）極大なもの．</td>
+        </tr>
+        <!-- わ行 -->
+    </table>
+
+    
+
+    <h4>脚注</h4>
+    <ol class="footnote">
+        <li id="footcite01"><a href="#footref01">&#42;1</a> ここでの行と列の定義は，数学などにおける用法に倣っています．公式の「列」概念とは異なるので注意します: アチーブメント「フリーフォール」には「1 回に 10 <span style="text-decoration: underline;">列</span>以上落下させる」（強調筆者）とありますが，この「列」は本マニュアルにおける「行」のことです．</li>
+    </ol>
+</main>
+
+<aside>
+<div class="side">
+
+    <br clear="both">
+    <a href="../index.html#basics">マニュアル表紙（基礎知識）へ</a><br>
+    <a href="../../index.html">トップページに戻る</a>
+
+</div>
+</aside>
+
+</div>
+
+<footer></footer>
+
+</div></body>
+
+</html>
