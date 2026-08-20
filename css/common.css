@@ -177,6 +177,7 @@ main {
 details {
 	padding: 0em 0em 0em 2em;
 }
+
 .stage-fig {
 	float: right;
 	margin: 1em;
@@ -193,6 +194,18 @@ details {
 	text-align: center;
 	font-size: 0.9em;
 }
+
+.version-table {
+	padding: 0em 0em 0em 1em;
+}
+.version-table tr td:nth-child(1) {
+	vertical-align: top;
+	white-space: nowrap;
+}
+.version-table tr td:nth-child(2) {
+	vertical-align: top;
+}
+
 
 aside {
 	padding: 20px 0;
