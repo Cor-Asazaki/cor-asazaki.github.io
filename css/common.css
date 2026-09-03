@@ -8,7 +8,6 @@
   font-display: swap; /* or optional/auto/block based on policy */
   /* unicode-range: U+0000-00FF, U+0100-017F; 必要に応じて調整 */
 }
-
 @font-face {
   font-family: 'Latin Modern Roman Italic';
   src: url('../fonts/woff2/lmroman10-italic.woff2') format('woff2'),
@@ -17,7 +16,6 @@
   font-style: italic;
   font-display: swap;
 }
-
 @font-face{
     font-family: 'Latin Modern Sans';
     src: url('../fonts/woff2/lmsans10-regular.woff2') format('woff2'),
@@ -51,6 +49,7 @@
     font-display: swap;
 }
 
+
 body {
 	background: #F7F7F7;
 	margin: 0;
@@ -58,6 +57,51 @@ body {
 	line-height: 1.6;
 	font-family: "Latin Modern Roman", "Noto Sans JP", "Hiragino Sans";
 }
+
+#dedication {
+	display: none;
+}
+html.show-dedication #dedication {
+	display: flex;
+	position: fixed;
+	inset: 0;
+	z-index: 10;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	opacity: 0;
+	pointer-events: none;
+	animation: dedication 3s ease-in-out forwards;
+}
+html.show-dedication #dedication p {
+	margin: 0;
+	font-family: "Latin Modern Roman Italic", "Noto Sans JP", "Hiragino Sans";
+	font-size: 1.25rem;
+	text-align: center;
+}
+html.show-dedication #outer {
+	opacity: 0;
+	animation: page-appear 0.5s ease-in forwards;
+	animation-delay: 3s;
+}
+@keyframes dedication {
+	0% { opacity: 0; }
+	16.667%, 83.333% { opacity: 1; }
+	100% { opacity: 0; }
+}
+	@keyframes page-appear {
+		to { opacity: 1; }
+	}
+@media (prefers-reduced-motion: reduce) {
+	html.show-dedication #dedication {
+		display: none;
+	}
+	html.show-dedication #outer {
+		opacity: 1;
+		animation: none;
+	}
+}
+
 #outer {
 }
 header {
