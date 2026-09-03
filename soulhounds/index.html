@@ -15,9 +15,21 @@
         gtag('js', new Date());
         gtag('config', 'G-S1J2KL6D2F');
     </script>
+    <script>
+        try {
+            if (!localStorage.getItem('soulhounds-dedication-seen')) {
+                localStorage.setItem('soulhounds-dedication-seen', 'true');
+                document.documentElement.classList.add('show-dedication');
+            }
+            // document.documentElement.classList.add('show-dedication');
+        } catch (error) {}
+    </script>
 </head>
 
 <body>
+<div id="dedication" aria-hidden="true">
+    <p>To Joyous</p>
+</div>
 <div id="outer">
 <header>
     <div id="header-inner"><h1>ソウルハウンドIII 安全潜行マニュアル</h1></div>
@@ -41,7 +53,7 @@
     </p>
     </p>
     <p>
-        本マニュアルの現行版は ver 0.1.10 です．リンクのある記事のみがひとまず完成しています．一応 PC での閲覧を推奨します（他端末でも閲覧は可能だと思います）．
+        本マニュアルの現行版は ver 0.1.11 です．リンクのある記事のみがひとまず完成しています．一応 PC での閲覧を推奨します（他端末でも閲覧は可能だと思います）．
     </p>
     <p>
         本マニュアルの内容のリファレンスおよび引用にあっては，筆者・サイトタイトル・サイトリンク（このページ）・版の 4 つを明示し，良識の範囲内で行ってください．その限りにおいて，筆者への連絡は不要です．
@@ -174,16 +186,20 @@
     <h2 id="history">更新履歴</h2>
     <table class="version-table">
         <tr>
-            <td>ver 0.1.10:</td>
-            <td>項目「定跡・針ヘコミ」を修正，旧図 2.6.3 を削除，図番号・パターン名を繰り上げ（針ヘコミは 600 m型に出現しない）． 2026/08/25.</td>
+            <td>ver 0.1.11:</td>
+            <td>献辞を追加．項目「ゲームの仕組み」に脚注 3 を追加．軽微な修正． 2026/09/03.</td>
         </tr>
     </table>
     <details>
         <summary>詳細な履歴</summary>
         <table class="version-table">
             <tr>
+                <td>ver 0.1.10:</td>
+                <td>項目「定跡・針ヘコミ」を修正，旧図 2.6.3 を削除，図番号・パターン名を繰り上げ（針ヘコミは 600 m型に出現しない）． 2026/08/25.</td>
+            </tr>
+            <tr>
                 <td>ver 0.1.9:</td>
-                <td>項目「定跡・針ヘコミ」「小技・ザクロ先取り」を追加．項目「小技・上吸引」を「定跡・上吸引」に変更．軽微な修正． 2026/08/21.</td>
+                <td>項目「定跡・針ヘコミ」「小技・ザクロ先取り」を追加．項目「小技・上吸引」を「定跡・上吸引」に変更，諸番号を繰り上げ．軽微な修正． 2026/08/21.</td>
             </tr>
             <tr>
                 <td>ver 0.1.8:</td>
@@ -234,6 +250,7 @@
 
 <footer></footer>
 
-</div></body>
+</div>
+</body>
 
 </html>
